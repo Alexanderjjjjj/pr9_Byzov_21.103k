@@ -3,6 +3,7 @@ package com.example.pr9sanek;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,6 @@ public class steps extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        startActivity(new Intent(this, map.class));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 55.25432645, 88.42534253")));
     }
 }
